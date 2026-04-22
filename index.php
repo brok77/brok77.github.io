@@ -4,7 +4,7 @@ date_default_timezone_set('Europe/Warsaw');
 
 $error = "";
 
-// 1. Obsługa usuwania (musi być przed pobieraniem danych)
+// 1. Obsługa usuwania
 if (isset($_GET['usun'])) {
     $id = (int)$_GET['usun'];
     $sql = "DELETE FROM rezerwacje WHERE id = ?";
