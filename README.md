@@ -30,4 +30,3 @@ Prosty, ale solidny system do zarządzania rezerwacjami (np. sal lekcyjnych, spr
 4. Otwórz przeglądarkę i wpisz `localhost/nazwa_folderu`.
 
 ---
-*Projekt rozwijany w celach edukacyjnych jako element portfolio na praktyki zawodowe.*
