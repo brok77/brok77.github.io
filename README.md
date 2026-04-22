@@ -1,6 +1,6 @@
 ![pokaz](https://github.com/user-attachments/assets/c7802078-0054-45ab-9c1b-2fb1e7e12cfa)# 📅 System Rezerwacji Zasobów
 
-Prosty, ale solidny system do zarządzania rezerwacjami (np. sal lekcyjnych, sprzętu IT czy biurek), stworzony w ramach nauki programowania (Technik Programista, klasa 2). Projekt demonstruje pełną ścieżkę przepływu danych: od formularza użytkownika, przez walidację w PHP, aż po zapis w bazie MySQL.
+Prosty, ale solidny system do zarządzania rezerwacjami (np. sal lekcyjnych, sprzętu IT czy biurek). Projekt demonstruje pełną ścieżkę przepływu danych: od formularza użytkownika, przez walidację w PHP, aż po zapis w bazie MySQL.
 
 ## 🚀 Główne Funkcje
 - **Pełny CRUD**: Możliwość dodawania, przeglądania i usuwania rezerwacji w czasie rzeczywistym.
