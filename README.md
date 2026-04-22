@@ -1,4 +1,4 @@
-![pokaz](https://github.com/user-attachments/assets/c7802078-0054-45ab-9c1b-2fb1e7e12cfa)# 📅 System Rezerwacji Zasobów
+![pokaz](pokazz.gif)# 📅 System Rezerwacji Zasobów
 
 Prosty, ale solidny system do zarządzania rezerwacjami (np. sal lekcyjnych, sprzętu IT czy biurek). Projekt demonstruje pełną ścieżkę przepływu danych: od formularza użytkownika, przez walidację w PHP, aż po zapis w bazie MySQL.
 
