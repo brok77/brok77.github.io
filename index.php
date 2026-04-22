@@ -88,6 +88,21 @@ $rezerwacje = $pdo->query("SELECT * FROM rezerwacje ORDER BY data_rezerwacji ASC
         .btn-delete { color: #ef4444; text-decoration: none; font-weight: bold; font-size: 13px; }
         .btn-delete:hover { text-decoration: underline; }
     </style>
+    <script>
+function validateForm() {
+    const data = document.querySelector('[name="data_rezerwacji"]').value;
+    const godzina = document.querySelector('[name="godzina_start"]').value;
+
+    const now = new Date();
+    const selected = new Date(data + "T" + godzina);
+
+    if (selected < now) {
+        alert("Nie możesz wybrać przeszłości!");
+        return false;
+    }
+    return true;
+}
+</script>
 </head>
 <body>
 
@@ -98,7 +113,7 @@ $rezerwacje = $pdo->query("SELECT * FROM rezerwacje ORDER BY data_rezerwacji ASC
         <div class="error-msg"><?= $error ?></div>
     <?php endif; ?>
 
-    <form method="POST">
+    <form method="POST" onsubmit="return validateForm()">
         <input type="text" name="imie_nazwisko" placeholder="Imię i Nazwisko" required>
         <select name="zasob_nazwa" required>
             <option value="">-- Wybierz zasób --</option>
