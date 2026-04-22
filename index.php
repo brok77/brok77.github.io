@@ -90,17 +90,7 @@ $rezerwacje = $pdo->query("SELECT * FROM rezerwacje ORDER BY data_rezerwacji ASC
     </style>
     <script>
 function validateForm() {
-    const data = document.querySelector('[name="data_rezerwacji"]').value;
-    const godzina = document.querySelector('[name="godzina_start"]').value;
-
-    const now = new Date();
-    const selected = new Date(data + "T" + godzina);
-
-    if (selected < now) {
-        alert("Nie możesz wybrać przeszłości!");
-        return false;
-    }
-    return true;
+    return true; // Walidacja jest już obsługiwana po stronie serwera, więc zawsze zwracamy true
 }
 </script>
 </head>
@@ -113,7 +103,7 @@ function validateForm() {
         <div class="error-msg"><?= $error ?></div>
     <?php endif; ?>
 
-    <form method="POST" onsubmit="return validateForm()">
+    <form method="POST" onsubmit="return validateForm()" autocomplete="off">
         <input type="text" name="imie_nazwisko" placeholder="Imię i Nazwisko" required>
         <select name="zasob_nazwa" required>
             <option value="">-- Wybierz zasób --</option>
